@@ -1,0 +1,46 @@
+[   
+	  {"name": "SourceLink", "remark": "链接", "xpath": "", "regex": "", "unit": ""},
+    {"name": "CreateTime", "remark": "采集时间", "xpath": "", "regex": "", "type": "日期型", "Null": "No"},
+    {"name": "CityName","remark": "城市名称","xpath": "//a[@class='logo fl']/@title","regex": "(.*.(?=中原地产))","unit": ""},
+
+    {"name": "DistrictName", "remark": "行政区名称", "xpath": "string(//div[@class='section']/a[3]/text())", "regex": "(.*.(?=租房))", "unit": ""},
+    {"name": "ZoneCaseFrom", "remark": "板块", "xpath": "string(//div[@class='section']/a[4]/text())", "regex": "(.*.(?=租房))", "unit": ""},
+    {"name": "SourceTitle", "remark": "房源标题", "xpath": "normalize-space(//h1[@class='f18 ']/text())", "regex": "", "unit": ""},
+	  {"name": "HouseTags", "remark": "房源标签", "xpath": "//a[contains(text(),'举报')]/../preceding-sibling::span/text()", "regex": "", "unit": ""},
+  
+	  {"name": "SourceID", "remark": "唯一", "xpath": "//p[@class='bot']/cite/text()", "regex": "((?<=:).*)", "unit": ""},
+    {"name": "ResidentialAreaName", "remark": "小区名", "xpath": "string(//label[contains(text(),'小区名称')]/following-sibling::span/a)", "regex": "", "unit": ""},
+    {"name": "Toward", "remark": "主体朝向", "xpath": "//p[@class='small']/span[@class='m_1']/text()", "regex": "", "unit": ""},
+    {"name": "Demand", "remark": "要求", "xpath": "", "regex": "", "unit": ""},
+    {"name": "CaseTime", "remark": "案例时间", "xpath": "", "regex": "", "unit": ""},
+    {"name": "Decoration", "remark": "装修", "xpath": "//p[@class='small']/span[@class='m_2']/text()", "regex": "", "unit": ""},
+    {"name": "BuildingCompletedYear", "remark": "建成年代", "xpath": "normalize-space(//p[@class='small']/span[@class='m_3']/text())", "regex": "", "unit": ""},
+    {"name": "UpdateTime", "remark": "更新时间", "xpath": "//a[contains(text(),'举报')]/../following-sibling::cite/text()", "regex": "", "unit": ""},
+
+    {"name": "Dwelling", "remark": "住宅类型", "xpath": "//span[contains(text(),'产权性质')]/following-sibling::span", "regex": "", "unit": ""},
+
+    {"name": "MonthPricBuildingCompletedYeare", "remark": "月租金", "xpath": "concat(//b[@class='nub fnub']/text(),'元/月')", "regex": "", "unit": ""},
+    {"name": "PaymentMode", "remark": "付款方式", "xpath": "//span[contains(text(),'支付类型')]/following-sibling::span", "regex": "", "unit": ""},
+    {"name": "RentType", "remark": "租赁类型", "xpath": "//p[@class='big']/span[@class='m_3']/text()", "regex": "", "unit": ""},
+    {"name": "UnitShape", "remark": "户型", "xpath": "//p[@class='big']/span[@class='m_1']/text()", "regex": "", "unit": ""},
+    {"name": "BuildingArea", "remark": "建筑面积", "xpath": "//span[contains(text(),'建筑面积')]/following-sibling::span", "regex": "", "unit": ""},
+    {"name": "FloorInfo","remark": "所在楼层","xpath": "string(//span[contains(text(),'楼层')]/following-sibling::span)","regex": "","unit": ""},
+    {"name": "Agent","remark": "经纪人","xpath": "string(//p[@class='top']/a)","regex": "","unit": ""},
+    {"name": "AgentScore","remark": "经纪人得分","xpath": "","regex": "","unit": ""},
+
+    {"name": "AgentCompany","remark": "经纪人公司","xpath": "","regex": "","unit": ""},
+    {"name": "AgentCall","remark": "经纪人电话","xpath": "normalize-space(string(//p[@class='phone fnub']))","regex": "","unit": ""},
+    {"name": "CheckHouseTime","remark": "看房时间","xpath": "//li/span[contains(text(),'看房时间')]/following-sibling::span/text()","regex": "","unit": ""},
+    {"name": "IsHasElevator","remark": "是否有电梯","xpath": "//li/span[contains(text(),'配备电梯')]/following-sibling::span/text()","regex": "","unit": ""},
+    {"name": "ParkingSpaceInfo","remark": "车位状况","xpath": "//li/span[contains(text(),'车位信息')]/following-sibling::span/text()","regex": "","unit": ""},
+    {"name": "WarterSupply","remark": "供水","xpath": "","regex": "","unit": ""},
+    {"name": "PowerSupply","remark": "供电","xpath": "","regex": "","unit": ""},
+    {"name": "GasSupply","remark": "燃气","xpath": "","regex": "","unit": ""},
+    {"name": "BaseFacility","remark": "基础设施","xpath": "","regex": "","unit": ""}
+
+
+
+
+   
+
+]
